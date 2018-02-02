@@ -23,8 +23,7 @@ export class AuthService {
                 this.decodedToken = this.jwtHelper.decodeToken(user.tokenString);
                 this.userToken = user.tokenString;
             }
-        })
-        .catch(this.handleError);
+        }).catch(this.handleError);
     }
 
     register(model: any) {
